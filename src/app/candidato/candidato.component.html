@@ -1,0 +1,198 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <h4 class="top3">Informações pessoais:</h4>
+    </div>
+  </div>
+
+  <br>
+
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="inputNome">Nome Completo (sem abreviação)</label>
+        <input type="text" [(ngModel)] = "nome" nome="nome" class="form-control" id="inputNome">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputTelefone1">Telefone 1</label>
+        <input type="tel" [(ngModel)] = "telUm" telUm="telUm" class="form-control" id="inputTelefone1">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputTelefone2">Telefone 2</label>
+        <input type="tel" [(ngModel)] = "telDois" telDois="telDois" class="form-control" id="inputTelefone2">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputEmail1">E-mail 1</label>
+        <input type="email" [(ngModel)] = "emailUm" emailUm="emailUm" class="form-control" id="inputEmail1">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputDocumento">Documento</label>
+        <input type="number" [(ngModel)] = "documento" documento="documento" class="form-control" id="inputDocumento">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputEstado">Estado</label>
+        <select id="inputEstado" [(ngModel)] = "estado" estado="estado" class="form-control">
+          <option selected></option>
+          <option>São Paulo</option>
+          <option>Minas Gerais</option>
+          <option>Paraná</option>
+        </select>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputCidade">Cidade</label>
+        <select id="inputCidade" [(ngModel)] = "cidade" cidade="cidade" class="form-control">
+          <option selected></option>
+          <option>Ribeirão Preto</option>
+          <option>Araraquara</option>
+          <option>Sertãozinho</option>
+        </select>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputBairro">Bairro</label>
+        <input type="text" [(ngModel)] = "bairro" bairro="bairro" class="form-control" id="inputBairro">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputEmail2">E-mail 2</label>
+        <input type="email" [(ngModel)] = "emailDois" emailDois="emailDois" class="form-control" id="inputEmail2">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputEstCivil">Estado Civil</label>
+        <select id="inputEstCivil" [(ngModel)] = "EstCivil" EstCivil="EstCivil" class="form-control">
+          <option selected></option>
+          <option>Solteiro(a)</option>
+          <option>Casado(a)</option>
+          <option>Viúvo(a)</option>
+        </select>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputHabilitacao">Habilitação</label>
+        <select id="inputHabilitacao" [(ngModel)] = "habilitacao" habilitacao="habilitacao" class="form-control">
+          <option selected></option>
+          <option>A</option>
+          <option>B</option>
+          <option>A/B</option>
+        </select>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputVeicProprio">Veículo próprio</label>
+        <select id="inputVeicProprio" [(ngModel)] = "veicProprio" veicProprio="veicProprio" class="form-control">
+          <option selected></option>
+          <option>Sim</option>
+          <option>Não</option>
+        </select>
+      </div>
+      <div class="form-group col-md-2 top">
+        <input type="file" [(ngModel)] = "linkCurriculoUm" linkCurriculoUm="linkCurriculoUm" class="form-control-file" id="exampleFormControlFile1">
+      </div>
+      <div class="form-group col-md-2 top">
+        <input type="file" [(ngModel)] = "linkCurriculoDois" linkCurriculoDois="linkCurriculoDois" class="form-control-file" id="exampleFormControlFile1">
+      </div>
+      <div class="form-group col-md-2 top">
+        <input type="file" [(ngModel)] = "linkCurriculoTres" linkCurriculoTres="linkCurriculoTres" class="form-control-file" id="exampleFormControlFile1">
+      </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="row">
+      <div class="col-sm">
+        <h4>Área de Formação e Interesse:</h4>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="inputVaga">Vaga (Nome)</label>
+        <input type="text" [(ngModel)] = "vaga" vaga="vaga" class="form-control" id="inputVaga">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputAreaInt">Área de interesse</label>
+        <select id="inputAreaInt" [(ngModel)] = "areaInt" areaInt="areaInt" class="form-control">
+          <option selected></option>
+          <option>Recursos Humano</option>
+          <option>Marketing</option>
+        </select>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputHierNiv">Hierarquia (nível)</label>
+        <select id="inputHierNiv" [(ngModel)] = "hierarquia" hierarquia="hierarquia" class="form-control">
+          <option selected></option>
+          <option>Junior</option>
+          <option>Pleno</option>
+        </select>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputIdioma">Idioma</label>
+        <select id="inputIdioma" [(ngModel)] = "idioma" idioma="idioma" class="form-control">
+          <option selected></option>
+          <option>Portugues</option>
+          <option>Inglês</option>
+        </select>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputIdioma">Formação acadêmica</label>
+        <select id="inputIdioma" [(ngModel)] = "formAcademica" formAcademica="formAcademica" class="form-control">
+          <option selected></option>
+          <option>Graduação</option>
+          <option>Pós-graduação</option>
+        </select>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputCursoSup">Qual curso superior</label>
+        <input type="text" [(ngModel)] = "cursoSup" cursoSup="cursoSup" class="form-control" id="inputCursoSup">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputCursoPos">Qual curso pós graduação/MBA</label>
+        <input type="text" [(ngModel)] = "cursoPos" cursoPos="cursoPos" class="form-control" id="inputCursoPos">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputCurso">Outros Cursos</label>
+        <textarea class="form-control" [(ngModel)] = "outrosCursos" outrosCursos="outrosCursos" id="inputCurso" rows="4"></textarea>
+      </div>
+    </div>
+    
+
+    <br><br><br>
+
+    <div class="row">
+      <div class="col-sm">
+        <h4>Entrevistas Anteriores:</h4>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="inputProcSel">Já participou de outros processos seletivo na empresa?</label>
+        <select id="inputProcSel" [(ngModel)] = "outroSeletiva" outroSeletiva="outroSeletiva" class="form-control">
+          <option selected></option>
+          <option>Sim</option>
+          <option>Não</option>
+        </select>
+      </div>
+      <div class="form-group col-md-2 top2">
+        <input type="file" [(ngModel)] = "dtLink1" dtLink1="dtLink1" class="form-control-file" id="exampleFormControlFile1">
+      </div>
+      <div class="form-group col-md-2 top2">
+        <input type="file" [(ngModel)] = "dtLink2" dtLink2="dtLink2" class="form-control-file" id="exampleFormControlFile1">
+      </div>
+      <div class="form-group col-md-2 top2">
+        <input type="file" [(ngModel)] = "dtLink3" dtLink3="dtLink3" class="form-control-file" id="exampleFormControlFile1">
+      </div>
+      <div class="form-group col-md-2 top2">
+        <input type="file" [(ngModel)] = "dtLink4" dtLink4="dtLink4" class="form-control-file" id="exampleFormControlFile1">
+      </div>
+      <div class="form-group col-md-12">
+        <label for="inputCurso">Observações gerais</label>
+        <textarea class="form-control" [(ngModel)] = "obsGeral" obsGeral="obsGeral" id="inputCurso" rows="5"></textarea>
+      </div>
+    </div>
+
+    <br>
+
+    <button type="submit" class="btn btn-primary editarBotao">Confirmar</button>
+    <button type="reset" class="btn btn-danger editarBotaoDanger">Cancelar</button>
+  </form>
